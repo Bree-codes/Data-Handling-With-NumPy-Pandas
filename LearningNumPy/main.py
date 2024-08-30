@@ -1,11 +1,15 @@
 import numpy as np
 
-# Create a NumPy array of integers from 1 to 5
-array = np.array([1, 2, 3, 4, 5])
+# Create a 2D array (3x3 matrix)
+matrix = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-# Multiply each element in the array by 2
-result = array * 2
+# Print the 2D array
+print("2D Array (Matrix):")
+print(matrix)
 
-# Print the original array and the result
-print("Original array:", array)
-print("Array after multiplication:", result)
+# Create a 3D array (2x2x3)
+three_d_array = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
+
+# Print the 3D array
+print("\n3D Array:")
+print(three_d_array)
