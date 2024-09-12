@@ -18,3 +18,4 @@ if __name__ == "__main__":
     ans3 = np.sum(ans2)
 
     print(f"ANS {ans3}")
+
