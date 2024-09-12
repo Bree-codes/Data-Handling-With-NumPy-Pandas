@@ -86,5 +86,3 @@ print("\nSimulated New Units Sold:", new_units_sold)
 print("Simulated New Revenue:", new_revenue)
 print("\nProduct Popularity by Units Sold:", popularity_rank_units + 1)
 print("Product Popularity by Revenue:", popularity_rank_revenue + 1)
-
-
