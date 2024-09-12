@@ -51,14 +51,14 @@ products_above_threshold = revenue[revenue > threshold]
 # 5. Profit Analysis
 profit = (selling_price - cost_price) * total_units_sold  # Profit for each product
 
-highest_profit_index = np.argmax(profit)  # Index of product with highest profit margin
-lowest_profit_index = np.argmin(profit)   # Index of product with lowest profit margin
+highest_profit_index = np.argmax(profit)  # Index of product with the highest profit margin
+lowest_profit_index = np.argmin(profit)   # Index of product with the lowest profit margin
 
 # 6. Region-wise Sales Analysis
 sales_by_region = np.sum(units_sold, axis=0)  # Total units sold by region
 
 most_sales_region = np.argmax(sales_by_region)  # Region with most sales
-least_sales_region = np.argmin(sales_by_region) # Region with least sales
+least_sales_region = np.argmin(sales_by_region) # Region with the least sales
 
 # 7. Simulate Sales Growth
 growth_rate = np.random.uniform(0.05, 0.20, total_units_sold.shape)
@@ -76,8 +76,8 @@ print("Top 3 Best-Selling Products (Total Units Sold):", top_3_best_selling)
 print("\nTotal Revenue for the Company: $", total_revenue)
 print("Products Exceeding Revenue Threshold:", products_above_threshold)
 
-"""print("\nProduct with Highest Profit Margin:", product_names[highest_profit_index])
-print("Product with Lowest Profit Margin:", product_names[lowest_profit_index])"""
+print("\nProduct with Highest Profit Margin:", product_name[highest_profit_index])
+print("Product with Lowest Profit Margin:", product_name[lowest_profit_index])
 
 print("\nRegion-wise Total Sales:", sales_by_region)
 print("Region with Most Sales:", most_sales_region + 1)
