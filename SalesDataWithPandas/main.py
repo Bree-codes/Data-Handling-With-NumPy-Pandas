@@ -11,6 +11,9 @@ data = {
 }
 
 df = pd.DataFrame(data)
+
+
+df = df.drop('Quantity',axis=1)
 print(df)
 
-print("\nQuantity Column:\n", df['Quantity'])
+print(df[['Product','Customer_Name']])
