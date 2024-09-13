@@ -12,3 +12,5 @@ data = {
 
 df = pd.DataFrame(data)
 print(df)
+
+print("\nQuantity Column:\n", df['Quantity'])
