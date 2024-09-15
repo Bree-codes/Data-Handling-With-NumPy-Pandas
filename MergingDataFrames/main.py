@@ -4,15 +4,14 @@ import pandas as pd
 df1 = pd.DataFrame(
     {'key': ['A', 'B', 'C'], 'value1': [1, 2, 3]} )
 print(df1)
+print("\n")
 
 df2 = pd.DataFrame(
-    {'key': ['A', 'B', 'D'], 'value2': [4, 5, 6]} )
+    {'key': ['A', 'B', 'D'], 'value2': [4, 5, 6]})
+    #index= ['val1','val2','val3'])
 print(df2)
+print("\n")
 
 merged_df = pd.merge(df1, df2, on='key', how='inner')
 print(merged_df)
-
-# Join DataFrames
-df3 = pd.DataFrame({'value3': [7, 8]}, index=['A', 'B'])
-joined_df = df1.join(df3)
-print(joined_df)
+print("\n")
