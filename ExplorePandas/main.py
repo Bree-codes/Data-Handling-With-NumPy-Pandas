@@ -21,6 +21,7 @@ data1 = {
 
 # Create a Pandas Series with the data and index
 data1 = pd.Series(data1)
+data1.name = 'List'
 
 # Display the Series
 print(data1)
