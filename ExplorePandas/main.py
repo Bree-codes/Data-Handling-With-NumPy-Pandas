@@ -1,5 +1,3 @@
-from operator import index
-
 import pandas as pd
 
 data = {
@@ -8,3 +6,6 @@ data = {
     'Course' : ['CyberSecurity','CS']
 }
 index= ['Student1','Student2']
+
+df =pd.DataFrame(data,index= index)
+print(df)
